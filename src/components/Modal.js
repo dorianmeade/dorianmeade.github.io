@@ -8,7 +8,7 @@ import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
 
 import me from '../assets/me.JPG'
-import resume from '../assets/Dorian-Meade.pdf'
+import resume from '../assets/dorianmeade.pdf'
 
 
 function Body() { 
@@ -30,7 +30,7 @@ function Body() {
                     <img
                         width={140}
                         height={140}
-                        className="mt-2 medi"
+                        className="mt-2 circular"
                         src={me}
                         alt="img"
                     />
@@ -41,15 +41,15 @@ function Body() {
                     <tbody>
                         <tr>
                         <td> Name </td>
-                        <td> Dorian Meade </td>
+                        <td className="switch"> Dorian Meade </td>
                         </tr>
                         <tr>
                         <td> Age </td>
-                        <td> 21 </td>
+                        <td className="switch"> 21 </td>
                         </tr>
                         <tr>
                         <td> Location </td>
-                        <td> Gainesville, FL </td>
+                        <td className="switch"> Ft Lauderdale, FL </td>
                         </tr>
                     </tbody>
                     </Table>
@@ -63,42 +63,39 @@ function Body() {
                 className="mx-2 mt-2"
             >
                 <Tab className="men box purpBorder mx-2 pl-2 " eventKey="about" title="About">
-                    <Row><Col> >Dorian.origin</Col></Row>
-                    <Row className="mb-3"><Col><span>&nbsp;&nbsp;</span>=> Davie, FL</Col> </Row>
-        
+   
                     <Row><Col> >Dorian.education</Col> </Row>
-                    <Row className="mb-3"><Col><span>&nbsp;&nbsp;</span>=> Univerity of Florida</Col> </Row>
+                    <Row className="mb-3 switch"><Col><span>&nbsp;&nbsp;</span>=> Univerity of Florida</Col> </Row>
         
                     <Row><Col> >Dorian.major</Col> </Row>
-                    <Row className="mb-3"><Col><span>&nbsp;&nbsp;</span>=> Computer Science</Col> </Row>
+                    <Row className="mb-3 switch"><Col><span>&nbsp;&nbsp;</span>=> Computer Science</Col> </Row>
         
                     <Row><Col> >Dorian.minor</Col> </Row>
-                    <Row className="mb-3"><Col><span>&nbsp;&nbsp;</span>=> Mathematics </Col> </Row>
+                    <Row className="mb-3 switch"><Col><span>&nbsp;&nbsp;</span>=> Mathematics </Col> </Row>
         
-                    <Row><Col> >Dorian.graduation</Col> </Row>
-                    <Row className="mb-3"><Col><span>&nbsp;&nbsp;</span>=> 2020 </Col> </Row>
+                    <Row><Col> >Dorian.expectedGraduation</Col> </Row>
+                    <Row className="mb-3 switch"><Col><span>&nbsp;&nbsp;</span>=> December 2020 </Col> </Row>
+                                       
+                    <Row><Col> >Dorian.resume</Col> </Row>
+                    <Row className="mb-3"><Col><span>&nbsp;&nbsp;</span>=> <a href={resume}>dorianmeade.pdf</a></Col></Row>
+                    
+                    <Row><Col> >Dorian.origin</Col></Row>
+                    <Row className="mb-3 switch"><Col><span>&nbsp;&nbsp;</span>=> South Florida</Col> </Row>
         
                     <Row><Col> >Dorian.interests</Col> </Row>
-                    <Row className="mb-3"><Col><span>&nbsp;&nbsp;</span>=> ["coding", "coffee", "cats", "machine_learning", <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>"music_festivals", "nature"] </Col> </Row>
-                </Tab>
-                
-                <Tab className="men box purpBorder mx-2 pl-2" eventKey="resume" title="Resume">
-                    <Row><Col> >Dorian.resume</Col> </Row>
-                    <Row className="mb-3"><Col><span>&nbsp;&nbsp;</span>=> <a href={resume}>resume.pdf</a></Col></Row>
+                    <Row className="mb-3 switch"><Col><span>&nbsp;&nbsp;</span>=> ["web_development", "machine_learning", "coffee", <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>"cats", "reading", "music_festivals", "hammocking"] </Col> </Row>
                 </Tab>
   
-                <Tab className="men box purpBorder mx-2 pl-2" eventKey="contact" title="Contact">
-                    <Row><Col> >Dorian.github</Col></Row>
-                    <Row className="mb-3"><Col><span>&nbsp;&nbsp;</span>=> <a href="https://github.com/dorianmeade">github.com/dorianmeade</a></Col></Row>
-        
-                    <Row><Col> >Dorian.linkedin</Col> </Row>
-                    <Row className="mb-3"><Col><span>&nbsp;&nbsp;</span>=> <a href="https://www.linkedin.com/in/dorianmeade">linkedin.com/in/dorianmeade</a></Col></Row>
-        
-                    <Row><Col> >Dorian.facebook</Col> </Row>
-                    <Row className="mb-3"><Col><span>&nbsp;&nbsp;</span>=> <a href="https://www.facebook.com/dorianmeade">facebook.com/dorianmeade</a></Col></Row>
+                <Tab className="men box purpBorder mx-2 pl-2" eventKey="connect" title="Connect">
         
                     <Row><Col> >Dorian.email</Col> </Row>
                     <Row className="mb-3"><Col><span>&nbsp;&nbsp;</span>=> <a href="mailto:dorianmeade1@gmail.com">dorianmeade1@gmail.com</a></Col></Row>
+
+                    <Row><Col> >Dorian.linkedin</Col> </Row>
+                    <Row className="mb-3"><Col><span>&nbsp;&nbsp;</span>=> <a href="https://www.linkedin.com/in/dorianmeade">linkedin.com/in/dorianmeade</a></Col></Row>
+
+                    <Row><Col> >Dorian.github</Col></Row>
+                    <Row className="mb-3"><Col><span>&nbsp;&nbsp;</span>=> <a href="https://github.com/dorianmeade">github.com/dorianmeade</a></Col></Row>
         
                 </Tab>
             </Tabs>

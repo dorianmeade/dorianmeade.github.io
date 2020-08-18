@@ -1,24 +1,185 @@
-.App {
-  text-align: left;
- }
- 
- .App-logo {
-   height: 25vmin;
- }
- 
- .App-header {
-   background-color: #D3B4E0;
-   min-height: 100vh;
-   display: flex;
-   flex-direction: column;
-   align-items: center;
-   justify-content: center;
-   font-size: calc(10px + 2vmin);
-   color: white;
-   font-family: "Lucida Console", Monaco, monospace;
- }
- 
- .App-link {
-   color: #1995F7;
- }
- 
+@import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
+@keyframes scaleIn {
+  0% { transform: scale(0,0)    }
+  100% {  transform: scale(1,1) }
+}
+.centerBox {
+  animation: scaleIn, 3s;
+  animation-fill-mode: forwards;
+  position: relative;
+  top: 75px;
+  left:0%;
+  background-color: #f8f4ff;
+  height: 515px;                 
+  width: 550px;
+  border: solid;
+  border-width: 2px;
+  border-radius: 15px;
+  border-color: #AE7FC3;
+}
+ .men {
+  font-family: Menlo;
+  font-size:  14px;
+}
+.box {
+  position: relative;
+  background-color: #181818;
+  overflow: scroll;
+  height: 200px; 
+  color: white;
+  margin-left:0;
+  cursor: default;
+
+}
+.nav-link, 
+.nav-link:hover {
+  background-color: #f8f4ff;
+  color: #AE7FC3;
+  border: solid;
+  border-width: thin;
+  border-radius: 5px;
+  border-color: #AE7FC3; 
+}
+.nav-tabs .nav-item:visited{
+  background-color: #f8f4ff;
+  color: #181818;
+  border: solid;
+  border-width: 2px;
+  border-color: #AE7FC3;
+}
+.tab-content .tab-pane a {
+  color: white;
+}
+.tab-content .tab-pane a:hover {
+  color: #AE7FC3;
+}
+.purpBorder {
+  border: solid;
+  border-width: 2px;
+  border-radius: 5px;
+  border-color: #AE7FC3;
+}
+.table td{
+  border-top: #AE7FC3 solid 1px;
+  cursor: default;
+}
+.showbox {
+  -webkit-transition: 1s ease-in-out;
+  -moz-transition: 1s ease-in-out;
+  -o-transition: 1s ease-in-out;
+  transition: 1s ease-in-out;
+}
+.showbox.scale:hover{
+  cursor:pointer;
+  -webkit-transform:scale(1.5);
+  -moz-transform:scale(1.5);
+  -o-transform:scale(1.5);
+  -ms-transform:scale(1.5);
+  transform:scale(1.5)
+}
+.medi {
+  transition: all .3s ease-in-out;
+  border: solid;
+  border-color: #AE7FC3;
+  border-radius: 5px;;
+}
+.medi:hover {
+  border: none;
+  border-radius: 50%;
+  box-shadow: 0px 8px 6px -4px #AE7FC3;
+}
+@keyframes showTopText {
+  0% { transform: translate3d(0, 100%, 0); }
+  50% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(0, 100%, 0); }
+}
+@keyframes showBottomText {
+  0% { transform: translate3d(0, -100%, 0); }
+  50% { transform: translate3d(0, 0, 0); }
+  100% { transform: translate3d(0, -100%, 0); }
+}
+@keyframes fadeout {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+.animated-title {
+  color: #512466;
+  font-family: Roboto, Arial, sans-serif;
+  height: 90vmin;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vmin;
+}
+.animated-title > div {
+  height: 50%;
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+}
+.animated-title > div div {
+  font-size: 12vmin;
+  padding: 2vmin 0;
+  position: absolute;
+}
+.animated-title > div div span {
+  display: block;
+}
+.animated-title > div.text-top { 
+  border-bottom: 1vmin solid #d6b3e6;
+  top: 0;
+  animation: fadeout 1s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+
+}
+.animated-title > div.text-top div {
+  animation: showTopText 3s;
+  animation-delay: 0.5s;
+  animation-fill-mode: forwards;
+  bottom: 0;
+  transform: translate(0, 100%);
+}
+.animated-title > div.text-top div span {
+  color: #f5dbff;
+}
+.animated-title > div.text-bottom {
+  bottom: 0;
+}
+.animated-title > div.text-bottom div {
+  animation: showBottomText 3s;
+  animation-delay: 1s;
+  animation-fill-mode: forwards;
+  top: 0;
+  transform: translate(0, -100%);
+}
+
+
+.popin {
+  -webkit-animation: bummer 5s;
+  animation: bummer 5s;
+  -webkit-transform: scale(0,0); 
+  transform: scale(0,0);
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes bummer {
+  0% {
+    -webkit-transform: scale(0,0); 
+  }
+  100% {
+      -webkit-transform: scale(1,1); 
+  }
+}
+
+@keyframes bummer {
+  0% {
+    -webkit-transform: scale(0,0); 
+  }
+  100% {
+      transform: scale(1,1); 
+  }
+}

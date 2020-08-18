@@ -3,10 +3,20 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "gh-pages": "^2.1.1",
-    "react": "^16.10.2",
-    "react-dom": "^16.10.2",
-    "react-scripts": "^3.3.0"
+    "bootstrap": "^4.5.0",
+    "bootstrap-icons": "^1.0.0-alpha5",
+    "gh-pages": "^2.2.0",
+    "react": "^16.13.1",
+    "react-animation": "^1.2.2",
+    "react-bootstrap": "^1.0.1",
+    "react-dom": "^16.13.1",
+    "react-fade-in": "^1.1.0",
+    "react-loading": "^2.0.3",
+    "react-lottie": "^1.2.3",
+    "react-mdl": "^1.11.0",
+    "react-scripts": "^3.4.1",
+    "react-sky": "^1.1.0",
+    "react-transition-group": "^1.2.1"
   },
   "scripts": {
     "start": "react-scripts start",

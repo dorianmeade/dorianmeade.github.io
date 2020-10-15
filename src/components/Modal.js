@@ -8,10 +8,10 @@ import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
 
 import me from '../assets/me.JPG'
-import resume from '../assets/dorianmeade.pdf'
+import resume from '../assets/meade.pdf'
 
 
-function Body() { 
+function Modal() { 
     const [key, setKey] = useState('about');
 
     return (
@@ -103,4 +103,4 @@ function Body() {
     );
 }
 
-export default Body;
+export default Modal;

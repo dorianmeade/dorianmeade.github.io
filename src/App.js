@@ -1,15 +1,14 @@
 import React from 'react';
-//import Loading from "./components/Loading.js"
-import Home from "./components/Home.js"
+import Modal from "./components/Modal.js"
+import Switch from "./components/Switch.js"
 
 import './App.css';
 
 function App() {
   return (
     <div>
-      <header>
-        <Home/>
-      </header>    
+        <Switch/>
+        <Modal/>
     </div>
   );
 }

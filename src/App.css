@@ -4,7 +4,12 @@
   0% { transform: scale(0,0)    }
   100% {  transform: scale(1,1) }
 }
-.centerBox {
+* {
+  font-family: Menlo;
+  font-size: 14px;
+}
+
+.modals {
   animation: scaleIn, 3s;
   animation-fill-mode: forwards;
   position: relative;
@@ -17,11 +22,10 @@
   border-width: 2px;
   border-radius: 15px;
   border-color: #AE7FC3;
+
 }
-.men {
-  font-family: Menlo;
-  font-size:  14px;
-}
+
+
 .box {
   position: relative;
   background-color: #181818;
@@ -166,6 +170,15 @@
   animation-fill-mode: forwards;
 }
 
+.switch:hover {
+  color: #AE7FC3;
+}
+
+.btn {
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
 @-webkit-keyframes bummer {
   0% {
     -webkit-transform: scale(0,0); 
@@ -184,11 +197,18 @@
   }
 }
 
-.switch:hover {
-  color: #AE7FC3;
+
+::-webkit-scrollbar {
+  display: none;
 }
 
-.btn {
-  margin-left: 20px;
-  margin-top: 20px;
+
+#menu {
+  position: fixed;
+  left: 0; 
+  top: 0; 
+  transform: translate3d(-100vw, 0, 0);
+
+  width: 100vw; 
+  height: 100vw;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import Modal from "./components/Modal.js"
 import Switch from "./components/Switch.js"
+import SlideOut from "./components/SlideOut.js"
 
 import './App.css';
 

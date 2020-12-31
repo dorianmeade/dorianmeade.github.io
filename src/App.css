@@ -7,8 +7,76 @@
 * {
   font-family: Menlo;
   font-size: 14px;
+  overflow: scroll;
 }
 
+a {
+  color: white
+}
+a:hover {
+  color: #AE7FC3;
+
+}
+
+.proj {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bubble {
+  width: 400px;
+  height: 350px;
+  padding-left: 10px;
+  padding-right: 30px;
+  border: 3px solid #AE7FC3;
+  margin: 20px;
+  padding-top: 10px;
+  text-align: center;
+  border-radius: 40px;
+  overflow: hidden;
+}
+
+.darkTerminal {
+  position: relative;
+  top: 150px;
+  left: 28%;
+  height: 400px;
+  width: 600px;
+  background-color:  #181818;
+  color: white;
+  cursor: default;
+  border-radius: 10px;
+  
+
+}
+.lightTerminal {
+  position: relative;
+  top: 150px;
+  left: 28%;
+  height: 400px;
+  width: 600px;
+  background-color:  white;
+  color: #181818;
+  cursor: default;
+  border-radius: 10px;
+
+}
+.outlined {
+  animation: scaleIn, 3s;
+  animation-fill-mode: forwards;
+  position: relative;
+  top: 150px;
+  left:0%;
+  background-color: #f8f4ff;
+  height: 280px;                 
+  width: 550px;
+  border: solid;
+  border-width: 2px;
+  border-radius: 15px;
+  border-color: #AE7FC3;
+
+}
 .modals {
   animation: scaleIn, 3s;
   animation-fill-mode: forwards;
@@ -25,38 +93,34 @@
 
 }
 
+.three-dee {
+  font-size: 8vmax;
+  color: rgb(30,30,30) ;
+  text-align: center;
+  text-shadow: -0.066em 0 1px rgba(255,255,0,0.67), 0.066em 0 1px rgba(174, 127, 195, 0.67);
+}
 
-.box {
-  position: relative;
-  background-color: #181818;
-  overflow: scroll;
-  height: 200px; 
-  color: white;
-  margin-left:0;
-  cursor: default;
-  overflow-x: hidden !important;
+.project_container {
+  width: 450px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 30px;
 }
-.nav-link, 
-.nav-link:hover {
+
+.project {
+  background-color: rgba(174, 127, 195, 0.4);
+  margin: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 10px;
+  width: 390px;
+  transition: 0.3s;
+}
+
+.project:hover {
   background-color: #f8f4ff;
-  color: #AE7FC3;
-  border: solid;
-  border-width: thin;
-  border-radius: 5px;
-  border-color: #AE7FC3; 
-}
-.nav-tabs .nav-item:visited{
-  background-color: #f8f4ff;
-  color: #181818;
-  border: solid;
-  border-width: 2px;
-  border-color: #AE7FC3;
-}
-.tab-content .tab-pane a {
-  color: white;
-}
-.tab-content .tab-pane a:hover {
-  color: #AE7FC3;
+
 }
 .purpBorder {
   border: solid;

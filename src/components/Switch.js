@@ -4,7 +4,7 @@ import DynamicSky from "./DynamicSky"
 
 
 
-function Switch(){ 
+function SparkleSwitch(){ 
 
     const [bkgd, setBkgd] = useState('sparkles off');
 
@@ -19,4 +19,4 @@ function Switch(){
     );
 }
 
-export default Switch;
+export default SparkleSwitch;

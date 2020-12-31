@@ -4,7 +4,7 @@
   "private": true,
   "dependencies": {
     "bootstrap": "^4.5.0",
-    "bootstrap-icons": "^1.0.0-alpha5",
+    "bootstrap-icons": "^1.2.1",
     "gh-pages": "^2.2.0",
     "react": "^16.13.1",
     "react-animation": "^1.2.2",

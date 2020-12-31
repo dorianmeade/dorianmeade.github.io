@@ -1,16 +1,23 @@
 import React from 'react';
-import Modal from "./components/Modal.js"
-import Switch from "./components/Switch.js"
-import SlideOut from "./components/SlideOut.js"
+import SparkleSwitch from "./components/Switch.js"
+import FullScreen from "./components/FullScreen.js"
+import AboutMe from "./components/AboutMe.js"
+import Projects from "./components/Projects.js"
 
 import './App.css';
 
 function App() {
   return (
-    <div>
-        <Switch/>
-        <Modal/>
-    </div>
+    <>
+      <SparkleSwitch/>
+      <FullScreen/>
+      <div id="down">
+        <AboutMe/>
+      </div>
+      <div id="projects">
+        <Projects/>
+      </div>
+    </>
   );
 }
 export default App;
